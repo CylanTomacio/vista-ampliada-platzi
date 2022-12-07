@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "author": "Elvis Briceño",
+    "name": "Vista ampliada para Platzi",
+    "description": "Esta extensión añade un botón que permite ampliar la vista del reproductor de video ocultando la sección de comentarios",
+    "version": "0.0.1",
+    "icons": {
+        "128": "./img/128.png"
+    },
+    "action": {
+        "default_icons": {
+            "128": "./img/128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches" : ["https://platzi.com/clases/*"],
+            "js" : ["./background.js"]
+        }
+    ]
+}
